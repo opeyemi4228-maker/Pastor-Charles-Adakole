@@ -147,7 +147,7 @@ const HeaderSlider = () => {
             </h1>
 
             {/* Sub-headline */}
-            <p className="mt-6 md:mt-8 max-w-2xl text-[15px] md:text-[17px] leading-[1.7] text-white/80 font-light opacity-0 animate-[heroReveal_900ms_cubic-bezier(0.22,1,0.36,1)_700ms_forwards]">
+            <p className="mt-6 md:mt-8 max-w-2xl text-[15px] md:text-[17px] leading-[1.7] text-white/80 font-medium opacity-0 animate-[heroReveal_900ms_cubic-bezier(0.22,1,0.36,1)_700ms_forwards]">
               I help leaders build systems and structure to execute consistently
               and scale without chaos. From strategy and SOPs to team structure
               and accountability, I bring order to complex operations so your
