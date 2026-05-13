@@ -59,47 +59,47 @@ function useReveal(options = { threshold: 0.12, rootMargin: "0px 0px -60px 0px" 
   return [ref, visible];
 }
 
-// ─── Pillar data ────────────────────────────────────────────────────
+// ─── Service data ────────────────────────────────────────────────────
 const PILLARS = [
   {
-    id: "strategic-clarity",
+    id: "strategic-direction",
     number: "I",
     icon: FiTarget,
-    title: "Strategic Clarity & Brand Positioning",
-    tagline: "Define your Category of One.",
+    title: "Strategic Direction",
+    tagline: "Clarify priorities and positioning so execution is focused.",
     summary:
-      "Stop competing on noise. Start leading through uniqueness. We clarify your message so your target audience recognizes you as the only solution to their specific problem.",
+      "Before anything is built or changed, we identify what matters most and align your direction. Priorities are defined, resources stop being wasted, and the organization moves with focus.",
     deliverables: [
-      "Positioning statement and message architecture",
-      "Competitor landscape diagnostic",
-      "Target-audience clarity mapping",
-      "Brand voice and tone guidelines",
-      "Signature offer design",
+      "Priority diagnostic and strategic clarity session",
+      "Direction alignment across leadership",
+      "Resource-to-priority mapping",
+      "Decision criteria and focus framework",
+      "Strategic positioning statement",
     ],
     whoItsFor:
-      "Founders and leaders whose work is excellent, but whose market doesn't yet recognize why they're different.",
+      "Founders and leaders whose priorities shift too often and whose team does not have a clear, shared sense of direction.",
     image:
       "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "A focused strategy planning session",
     background: "white",
   },
   {
-    id: "sop-systems",
+    id: "systems-sops",
     number: "II",
     icon: FiLayers,
-    title: "SOP & Systems Consulting",
-    tagline: "Build a Business Brain that works while you sleep.",
+    title: "Systems & SOPs",
+    tagline: "Turn operations into documented, repeatable systems.",
     summary:
-      "We document your core operations (Standard Operating Procedures) to ensure consistency, scalability, and operational peace. We turn chaos into a documented, repeatable process.",
+      "We convert informal workflows and tacit knowledge into Standard Operating Procedures — documented, repeatable systems your organization can run on consistently, without depending on any one person's memory.",
     deliverables: [
-      "Full audit of current workflows",
+      "Full audit of current workflows and bottlenecks",
       "Documented SOPs for core operations",
-      "Systems integration and tooling advisory",
       "Role clarity and delegation frameworks",
       "Handover-ready operations manual",
+      "Tooling and workflow integration advisory",
     ],
     whoItsFor:
-      "Leaders whose businesses or ministries depend too heavily on their personal memory, attention, or heroics.",
+      "Leaders whose operations depend too heavily on their personal presence — and want a business that runs even when they step back.",
     image:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "Documentation and systems planning",
@@ -109,44 +109,44 @@ const PILLARS = [
     id: "leadership-architecture",
     number: "III",
     icon: FiUsers,
-    title: "Team Management & Leadership Architecture",
-    tagline: "Transition from Manager to Leader.",
+    title: "Leadership Architecture",
+    tagline: "Design how teams think, communicate, and execute.",
     summary:
-      "We help you design accountability systems, meeting cadences, and feedback loops that empower your team to perform at their peak — without constant micromanagement.",
+      "We design the accountability systems, meeting cadences, decision flows, and feedback loops that allow your team to operate with clarity and ownership — without constant founder intervention.",
     deliverables: [
       "Organizational design and role clarity",
       "Meeting cadence architecture (weekly/monthly/quarterly)",
       "Performance and accountability frameworks",
       "Feedback and coaching systems",
-      "Leadership coaching for the principal",
+      "Decision flow and escalation structure",
     ],
     whoItsFor:
-      "Leaders who find themselves still doing the work of three people — and want a team that carries weight with them.",
+      "Leaders who are still the bottleneck in every decision — and want a team that executes with clarity and takes ownership.",
     image:
       "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1600&q=80",
     imageAlt: "Team leadership and collaboration",
     background: "white",
   },
   {
-    id: "life-ministry",
+    id: "ongoing-advisory",
     number: "IV",
     icon: FiCompass,
-    title: "Life & Ministry Advisory",
-    tagline: "Aligning vision with administration.",
+    title: "Ongoing Advisory",
+    tagline: "Ensure structure evolves as your organization scales.",
     summary:
-      "Specialized consulting for ministry leaders and individuals who need a clear strategic path to fulfill their spiritual and personal assignments with excellence.",
+      "Structure is not a one-time event. As your organization grows, systems must evolve. The Ongoing Advisory engagement provides the continuity needed to keep your architecture matched to your ambition.",
     deliverables: [
-      "Vision-to-assignment mapping",
-      "Ministry operations architecture",
-      "Personal rhythms and stewardship planning",
-      "Leadership integrity and burnout prevention",
-      "Spiritual-life / organizational-life coherence reviews",
+      "Quarterly strategic review and recalibration",
+      "Systems refinement and optimization",
+      "Leadership coaching and accountability check-ins",
+      "Organizational health diagnostics",
+      "Reactive advisory for emerging challenges",
     ],
     whoItsFor:
-      "Ministry leaders, called individuals, and principals carrying assignments that require both spiritual clarity and administrative excellence.",
+      "Leaders who have built initial structure and need a trusted advisor to ensure it evolves correctly as the organization scales.",
     image:
       "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1600&q=80",
-    imageAlt: "Contemplative leader at a window",
+    imageAlt: "An ongoing advisory and leadership partnership",
     background: "cream",
   },
 ];
@@ -155,27 +155,27 @@ const PILLARS = [
 const PROCESS_STEPS = [
   {
     step: "01",
-    phase: "The Clarity Audit",
-    duration: "2–3 weeks",
-    copy: "We dive deep into your current workflows, vision, and bottlenecks to identify exactly what is holding you back.",
+    phase: "Diagnose",
+    duration: "Weeks 1–2",
+    copy: "Identify where execution is breaking down — the real bottlenecks, not the symptoms. We surface what is actually in the way before designing any solution.",
   },
   {
     step: "02",
-    phase: "The Blueprint",
-    duration: "3–4 weeks",
-    copy: "We design a custom roadmap, including tailored SOPs and leadership structures, to solve your specific challenges.",
+    phase: "Design",
+    duration: "Weeks 3–6",
+    copy: "Build the structure using the ACE Execution Framework — SOPs, team architecture, accountability systems, and decision flows designed for your specific context.",
   },
   {
     step: "03",
-    phase: "Implementation",
-    duration: "2–6 months",
-    copy: "I walk with you as we roll out these systems into your daily operations, ensuring your team is aligned.",
+    phase: "Deploy",
+    duration: "Weeks 7–12+",
+    copy: "Implement the designed systems into real operations. Team alignment, rollout support, and the coaching needed to ensure structure becomes lived reality — not shelved documents.",
   },
   {
     step: "04",
-    phase: "Continuous Optimization",
-    duration: "Ongoing retainer",
-    copy: "Periodic reviews to ensure your systems scale and evolve as your organization grows.",
+    phase: "Refine",
+    duration: "Ongoing",
+    copy: "Optimize for scale and stability. Periodic reviews ensure your systems evolve with your organization and continue to serve the next level of growth.",
   },
 ];
 
@@ -183,7 +183,7 @@ const PROCESS_STEPS = [
 const SERVICES_LD = {
   "@context": "https://schema.org",
   "@type": "ItemList",
-  name: "Charles Adakole Consulting — Core Services",
+  name: "Charles Adakole — Core Services",
   itemListElement: PILLARS.map((p, i) => ({
     "@type": "ListItem",
     position: i + 1,
@@ -193,7 +193,7 @@ const SERVICES_LD = {
       description: p.summary,
       provider: {
         "@type": "ProfessionalService",
-        name: "Charles Adakole Consulting",
+        name: "Charles Adakole",
       },
       url: `https://charlesadakole.com/services#${p.id}`,
     },
@@ -269,18 +269,17 @@ const ServicesHero = () => {
             id="services-hero-heading"
             className="font-light leading-[1.02] tracking-[-0.015em] text-white text-[44px] sm:text-[56px] md:text-[72px] lg:text-[84px]"
           >
-            Four pillars.{" "}
+            Four services.{" "}
             <span className="italic font-normal" style={{ color: "#C9A227" }}>
-              One
-            </span>{" "}
-            standard of excellence.
+              One result
+            </span>
+            : structured execution.
           </h1>
 
           <p className="mt-8 md:mt-10 max-w-2xl text-[15px] md:text-[17px] leading-[1.7] text-white/75">
-            Every engagement combines strategic clarity with structural
-            precision. Whether you&apos;re scaling a business, leading a
-            ministry, or refining your life&apos;s vision, these four pillars
-            turn overwhelm into high-impact leadership.
+            Whether you are a founder, executive, or ministry leader — if
+            growth has outpaced structure and execution is inconsistent, these
+            four services deliver the architecture that changes that.
           </p>
         </div>
       </div>
@@ -546,7 +545,7 @@ const PillarSection = ({ pillar, index }) => {
                 href="/contact"
                 className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[11.5px] font-semibold tracking-[0.16em] uppercase shadow-sm hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C9A227] transition-all duration-300"
               >
-                Schedule a consultation
+                Book a Strategy Session
                 <FiArrowUpRight
                   className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden="true"
@@ -600,11 +599,11 @@ const ProcessTimeline = () => {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
             ].join(" ")}
           >
-            How we{" "}
+            Diagnose. Design.{" "}
             <span className="italic font-normal" style={{ color: "#C9A227" }}>
-              work
-            </span>{" "}
-            together.
+              Deploy
+            </span>
+            . Refine.
           </h2>
 
           <p
@@ -613,8 +612,9 @@ const ProcessTimeline = () => {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
             ].join(" ")}
           >
-            Every engagement follows a four-phase rhythm — diagnostic before
-            prescriptive, partnership over transaction.
+            Every engagement follows a four-step rhythm — identify the real
+            breakdown points before designing any solution, then deploy and
+            refine until structure is lived reality.
           </p>
         </div>
 
@@ -681,7 +681,7 @@ const ServicesClosingCTA = () => {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3",
           ].join(" ")}
         >
-          Not sure which pillar fits?
+          Not sure where to start?
         </p>
         <h2
           id="services-cta-heading"
@@ -690,9 +690,9 @@ const ServicesClosingCTA = () => {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
           ].join(" ")}
         >
-          Most engagements begin with{" "}
+          If it is not structured,{" "}
           <span className="italic font-normal" style={{ color: "#C9A227" }}>
-            one conversation
+            it will not scale
           </span>
           .
         </h2>
@@ -703,8 +703,8 @@ const ServicesClosingCTA = () => {
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
           ].join(" ")}
         >
-          Tell me what you&apos;re facing. Together we&apos;ll identify which
-          pillar — or combination of pillars — your organization needs most.
+          Book a strategy session and we&apos;ll identify which service — or
+          combination of services — your organization needs most right now.
         </p>
 
         <div
@@ -717,7 +717,7 @@ const ServicesClosingCTA = () => {
             href="/contact"
             className="group inline-flex items-center gap-2 px-8 md:px-10 py-4 md:py-5 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[12px] md:text-[13px] font-semibold tracking-[0.16em] uppercase shadow-[0_10px_30px_-10px_rgba(201,162,39,0.5)] hover:shadow-[0_16px_40px_-10px_rgba(201,162,39,0.7)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C9A227] transition-all duration-300"
           >
-            Schedule a Strategic Consultation
+            Book a Strategy Session
             <FiArrowRight
               className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
               aria-hidden="true"

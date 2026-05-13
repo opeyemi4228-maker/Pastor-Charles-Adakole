@@ -35,39 +35,39 @@ function useReveal(options = { threshold: 0.12, rootMargin: "0px 0px -60px 0px" 
 const PRACTICES = [
   {
     number: "I",
-    title: "Strategic Clarity & Brand Positioning",
+    title: "Strategic Direction",
     summary:
-      "Define your Category of One. Stop competing on noise — start leading through uniqueness.",
+      "Clarify priorities and positioning so execution is focused and resources are not wasted on the wrong things.",
     detail:
-      "We clarify your message so your target audience recognizes you as the only solution to their specific problem.",
-    href: "/services/strategic-clarity",
+      "We identify what matters most and align your direction before building anything — diagnostic before prescriptive.",
+    href: "/services#strategic-direction",
   },
   {
     number: "II",
-    title: "SOP & Systems Consulting",
+    title: "Systems & SOPs",
     summary:
-      "Build a Business Brain that works while you sleep. Turn chaos into a documented, repeatable process.",
+      "Turn informal operations into documented, repeatable systems. Build a business that runs beyond your personal presence.",
     detail:
-      "We document your core operations (Standard Operating Procedures) to ensure consistency, scalability, and operational peace.",
-    href: "/services/sop-systems",
+      "We document your core workflows into Standard Operating Procedures that ensure consistency, scalability, and operational peace.",
+    href: "/services#systems-sops",
   },
   {
     number: "III",
-    title: "Team Management & Leadership Architecture",
+    title: "Leadership Architecture",
     summary:
-      "Transition from Manager to Leader. Design accountability systems that empower your team to perform at their peak.",
+      "Design how your teams think, communicate, and execute. Move from manager to leader through structured accountability.",
     detail:
-      "Custom meeting cadences, feedback loops, and accountability frameworks — without constant micromanagement.",
-    href: "/services/leadership-architecture",
+      "Custom role clarity, meeting cadences, feedback loops, and accountability frameworks — without constant micromanagement.",
+    href: "/services#leadership-architecture",
   },
   {
     number: "IV",
-    title: "Life & Ministry Advisory",
+    title: "Ongoing Advisory",
     summary:
-      "Aligning vision with administration. Specialized consulting for ministry leaders and personal assignments.",
+      "Ensure structure evolves as your organization scales. A partner who stays until the systems are lived reality.",
     detail:
-      "A clear strategic path for individuals called to fulfill their spiritual and personal assignments with excellence.",
-    href: "/services/life-ministry",
+      "Periodic reviews, refinement cycles, and an ongoing advisory relationship that keeps your architecture matched to your ambition.",
+    href: "/services#ongoing-advisory",
   },
 ];
 
@@ -90,7 +90,7 @@ const HomeProducts = () => {
               ].join(" ")}
             >
               <span className="inline-block w-8 h-px" style={{ backgroundColor: "#C9A227" }} />
-              What I Do
+              Services
             </p>
 
             <h2
@@ -100,9 +100,9 @@ const HomeProducts = () => {
                 headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5",
               ].join(" ")}
             >
-              Four pillars.{" "}
+              Four services.{" "}
               <span className="italic font-normal" style={{ color: "#C9A227" }}>One</span>{" "}
-              standard of excellence.
+              result: structured execution.
             </h2>
 
             <p
@@ -111,10 +111,9 @@ const HomeProducts = () => {
                 headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
               ].join(" ")}
             >
-              Every engagement combines strategic clarity with structural
-              precision. Whether you&apos;re scaling a business, leading a
-              ministry, or refining your life&apos;s vision, these four pillars
-              turn overwhelm into high-impact leadership.
+              Whether you&apos;re a founder, executive, or ministry leader —
+              if execution is inconsistent and growth is increasing pressure,
+              these four services bring the structure that changes that.
             </p>
 
             <div

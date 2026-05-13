@@ -55,25 +55,25 @@ const isValidEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(String(v).trim(
 
 const INQUIRY_OPTIONS = [
   { value: "", label: "Select an area of focus" },
-  { value: "strategic-clarity", label: "Strategic Clarity & Brand Positioning" },
-  { value: "sop-systems", label: "SOP & Systems Consulting" },
-  { value: "leadership", label: "Team Management & Leadership" },
-  { value: "life-ministry", label: "Life & Ministry Advisory" },
+  { value: "strategic-direction", label: "Strategic Direction" },
+  { value: "systems-sops", label: "Systems & SOPs" },
+  { value: "leadership-architecture", label: "Leadership Architecture" },
+  { value: "ongoing-advisory", label: "Ongoing Advisory" },
   { value: "not-sure", label: "I'm not sure yet — let's talk" },
 ];
 
 const FAQ = [
   {
     q: "How do engagements typically begin?",
-    a: "Every engagement starts with The Clarity Audit — a focused diagnostic phase (2–3 weeks) where we surface what's actually in the way before designing any solution. Most relationships begin with a 30-minute introductory call at no charge.",
+    a: "Every engagement starts with a Diagnose phase — a focused diagnostic (1–2 weeks) where we identify the real breakdown points before designing any solution. Most relationships begin with a 30-minute strategy session at no charge.",
   },
   {
-    q: "Do you work with ministry leaders and faith-based organizations?",
-    a: "Yes. Life & Ministry Advisory is one of the four pillars of the practice. I specialize in aligning vision with administration for ministry leaders — including ministry operations architecture, personal stewardship planning, and leadership integrity reviews.",
+    q: "Who is this for?",
+    a: "This is for founders, executives, and ministry leaders who have vision but inconsistent execution — where structure has not kept pace with growth, decisions still depend on the leader, and the team lacks clear systems and accountability.",
   },
   {
     q: "Are engagements available outside Nigeria?",
-    a: "Yes. Based in Abuja, I serve clients globally through Virtual Advisory engagements — including video sessions, async deliverables, and periodic in-person intensives where the engagement warrants them.",
+    a: "Yes. Based in Abuja, Nigeria, I serve clients globally through virtual advisory engagements — including video sessions, async deliverables, and periodic in-person intensives where the engagement warrants them.",
   },
 ];
 
@@ -81,10 +81,10 @@ const FAQ = [
 const CONTACT_LD = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  name: "Contact Charles Adakole Consulting",
+  name: "Contact Charles Adakole",
   mainEntity: {
     "@type": "Organization",
-    name: "Charles Adakole Consulting",
+    name: "Charles Adakole",
     contactPoint: [
       {
         "@type": "ContactPoint",
@@ -165,18 +165,17 @@ const ContactHero = () => (
           id="contact-hero-heading"
           className="font-light leading-[1.02] tracking-[-0.015em] text-white text-[44px] sm:text-[56px] md:text-[72px] lg:text-[84px]"
         >
-          Ready to find your{" "}
+          Book a{" "}
           <span className="italic font-normal" style={{ color: "#C9A227" }}>
-            focus
+            Strategy Session
           </span>
-          ?
+          .
         </h1>
 
         <p className="mt-8 md:mt-10 max-w-2xl text-[15px] md:text-[17px] leading-[1.7] text-white/75">
-          Take the first step toward a more organized, impactful future.
-          Whether you are scaling a business, leading a ministry, or refining
-          your life&apos;s vision, I am here to help you execute with
-          precision.
+          If execution is inconsistent, structure is not keeping up with growth,
+          or your team depends too heavily on you — let&apos;s talk about what
+          building the right structure would look like for your organization.
         </p>
       </div>
     </div>
@@ -214,7 +213,7 @@ const ContactBody = () => {
             </h2>
 
             <p className="mt-5 max-w-xl text-[15px] leading-[1.7] text-neutral-700">
-              A senior advisor reads every inquiry. You can expect a personal
+              Every inquiry is read personally. You can expect a personal
               response within two business days.
             </p>
 
@@ -255,7 +254,7 @@ const ContactBody = () => {
                   Icon={FiMapPin}
                   label="Location"
                   value="Abuja, Nigeria"
-                  note="Global Virtual Advisory · In-person engagements by arrangement"
+                  note="Global Advisory · In-person engagements by arrangement"
                 />
               </ul>
 
@@ -416,7 +415,7 @@ const ContactForm = () => {
           I&apos;ll respond personally within two business days. In the
           meantime, feel free to{" "}
           <Link href="/services" className="underline underline-offset-2 hover:text-[#C9A227] transition-colors">
-            explore the four pillars
+            explore the four services
           </Link>{" "}
           if you haven&apos;t already.
         </p>

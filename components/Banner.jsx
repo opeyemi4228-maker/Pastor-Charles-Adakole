@@ -41,25 +41,25 @@ function useReveal(options = { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
   return [ref, visible];
 }
 
-// Three principles distilled from the About Me voice
+// Three principles distilled from the advisory approach
 const PRINCIPLES = [
   {
     number: "01",
-    title: "Strategic Clarity",
+    title: "Clarity",
     copy:
-      "I help leaders name what they want, why it matters, and what stands in the way — before we build anything.",
+      "Clarify direction, priorities, and what matters — before anything is built or changed.",
   },
   {
     number: "02",
-    title: "Structural Precision",
+    title: "Systems",
     copy:
-      "Vision without architecture is a wish. Every engagement delivers documented systems your organization can run on.",
+      "Build documented, repeatable systems for operations so execution is consistent and not dependent on memory.",
   },
   {
     number: "03",
-    title: "Stewardship Focus",
+    title: "Execution",
     copy:
-      "The coordination of resources and people toward high-level goals — held with the care of a calling, not a contract.",
+      "Embed rhythm, accountability, and decision flow so growth becomes controlled and scalable.",
   },
 ];
 
@@ -158,7 +158,7 @@ const Banner = () => {
                 <div className="relative aspect-[4/5]">
                   <Image
                     src={PORTRAIT}
-                    alt="Charles Adakole, founder and principal advisor at Charles Adakole Consulting"
+                    alt="Charles Adakole, strategic advisor"
                     fill
                     sizes="(max-width: 1024px) 100vw, 42vw"
                     className="object-cover transition-transform duration-[1400ms] ease-out group-hover:scale-[1.03]"
@@ -183,7 +183,7 @@ const Banner = () => {
                       aria-hidden="true"
                     />
                     <span className="text-[10px] font-semibold tracking-[0.2em] uppercase text-neutral-900">
-                      Charles Adakole · Principal Advisor
+                      Charles Adakole · Strategic Advisor
                     </span>
                   </span>
                 </div>
@@ -193,30 +193,25 @@ const Banner = () => {
             {/* Story */}
             <div className="lg:col-span-7 lg:pl-4 lg:pt-4">
               <p className="font-light leading-[1.15] tracking-tight text-neutral-900 text-[26px] md:text-[32px] lg:text-[38px] max-w-2xl">
-                A strategic partner for those called to lead in{" "}
+                A strategic advisor helping leaders bring{" "}
                 <span className="italic font-normal" style={{ color: "#C9A227" }}>
-                  complex environments
+                  structure to complex operations
                 </span>
                 .
               </p>
 
               <div className="mt-6 md:mt-8 space-y-5 text-[15px] md:text-[16px] leading-[1.8] text-neutral-700 max-w-xl">
                 <p>
-                  Charles Adakole is a dedicated professional consultant and
-                  executive advisor specializing in organizational management
-                  and personal stewardship. By combining strategic clarity with
-                  structural precision, Charles helps leaders move from a state
-                  of overwhelm to one of high-impact leadership.
+                  Charles Adakole is a strategic advisor helping leaders bring
+                  structure to complex operations through systems, clarity, and
+                  execution design.
                 </p>
                 <p>
-                  With a deep focus on coordinating resources and people to
-                  reach high-level goals, Charles serves as a{" "}
-                  <em className="not-italic font-semibold text-neutral-900">
-                    Strategic Partner
-                  </em>{" "}
-                  to those called to lead in complex environments — in the
-                  boardroom, in ministry, and in the quieter work of a
-                  disciplined life.
+                  He works with founders, executives, and ministry leaders
+                  operating in complex environments where growth has outpaced
+                  structure — bringing clarity to direction, systems to
+                  operations, and structure to leadership so execution becomes
+                  consistent, measurable, and scalable.
                 </p>
               </div>
 
@@ -228,8 +223,7 @@ const Banner = () => {
                   style={{ backgroundColor: "#C9A227" }}
                 />
                 <blockquote className="text-[17px] md:text-[20px] lg:text-[22px] leading-[1.5] italic font-light text-neutral-900 max-w-xl">
-                  Clarity is not the reward at the end of the work. It is the
-                  discipline that makes the work possible in the first place.
+                  If it is not structured, it will not scale.
                 </blockquote>
                 <figcaption className="mt-4 text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-600">
                   Charles Adakole
@@ -266,7 +260,7 @@ const Banner = () => {
           className="pt-12 md:pt-14 border-t border-neutral-300/70"
         >
           <p className="text-[11px] font-semibold tracking-[0.22em] uppercase text-neutral-500 mb-8">
-            The Strategic Partner Approach
+            The Advisory Approach
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">

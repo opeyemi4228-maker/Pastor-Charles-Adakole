@@ -47,32 +47,33 @@ export const metadata = {
 
   title: {
     default:
-      "Charles Adakole Consulting | Strategic Advisor & Executive Coach",
-    template: "%s · Charles Adakole Consulting",
+      "Charles Adakole | Strategic Advisory | Systems | Execution",
+    template: "%s · Charles Adakole",
   },
 
   description:
-    "Strategic advisory and executive coaching for leaders in business, life, and ministry. Helping founders, executives, and ministry leaders move from overwhelm to high-impact leadership through strategic clarity and structural precision.",
+    "Strategic advisor helping founders, executives, and ministry leaders build systems and structure to execute consistently and scale without chaos. From strategy and SOPs to team structure and accountability.",
 
-  applicationName: "Charles Adakole Consulting",
+  applicationName: "Charles Adakole",
   authors: [{ name: "Charles Adakole" }],
   creator: "Charles Adakole",
-  publisher: "Charles Adakole Consulting",
+  publisher: "Charles Adakole",
   generator: "Next.js",
   referrer: "strict-origin-when-cross-origin",
 
   keywords: [
     "strategic advisor",
-    "executive coach",
+    "execution systems",
     "leadership consulting",
     "business consulting Nigeria",
     "SOP consulting",
     "standard operating procedures",
-    "brand positioning",
+    "ACE execution framework",
     "ministry consulting",
     "organizational management",
     "Charles Adakole",
     "Abuja consulting",
+    "operational structure",
   ],
 
   category: "Business Consulting",
@@ -86,17 +87,17 @@ export const metadata = {
     type: "website",
     locale: "en_US",
     url: SITE_URL,
-    siteName: "Charles Adakole Consulting",
+    siteName: "Charles Adakole",
     title:
-      "Charles Adakole Consulting | Strategic Advisor & Executive Coach",
+      "Charles Adakole | Strategic Advisory | Systems | Execution",
     description:
-      "Clarity of Vision. Precision of Execution. Advisory and coaching for leaders in business, life, and ministry — from Abuja to the world.",
+      "Turn Vision Into Structured Execution. Helping leaders build systems and structure to execute consistently and scale without chaos.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Charles Adakole Consulting — Strategic Advisor & Executive Coach",
+        alt: "Charles Adakole — Strategic Advisory | Systems | Execution",
       },
     ],
   },
@@ -104,9 +105,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Charles Adakole Consulting | Strategic Advisor & Executive Coach",
+      "Charles Adakole | Strategic Advisory | Systems | Execution",
     description:
-      "Clarity of Vision. Precision of Execution. Advisory and coaching for leaders in business, life, and ministry.",
+      "Turn Vision Into Structured Execution. Helping leaders build systems and structure to execute consistently and scale without chaos.",
     images: ["/og-image.jpg"],
     creator: "@charlesadakole",
   },
@@ -166,8 +167,7 @@ const STRUCTURED_DATA = {
     {
       "@type": "Organization",
       "@id": `${SITE_URL}/#organization`,
-      name: "Charles Adakole Consulting",
-      alternateName: "Charles Adakole & Co",
+      name: "Charles Adakole",
       url: SITE_URL,
       logo: {
         "@type": "ImageObject",
@@ -182,7 +182,7 @@ const STRUCTURED_DATA = {
       founder: {
         "@type": "Person",
         name: "Charles Adakole",
-        jobTitle: "Strategic Advisor & Executive Coach",
+        jobTitle: "Strategic Advisor | Systems | Execution",
       },
       contactPoint: [
         {
@@ -202,28 +202,28 @@ const STRUCTURED_DATA = {
     {
       "@type": "ProfessionalService",
       "@id": `${SITE_URL}/#service`,
-      name: "Charles Adakole Consulting",
+      name: "Charles Adakole",
       parentOrganization: { "@id": `${SITE_URL}/#organization` },
       description:
-        "Strategic advisory and executive coaching for business leaders, executives, and ministry principals. Four pillars: Strategic Clarity & Brand Positioning, SOP & Systems Consulting, Team Management & Leadership Architecture, Life & Ministry Advisory.",
+        "Strategic advisor helping founders, executives, and ministry leaders build systems and structure to execute consistently and scale without chaos. Services: Strategic Direction, Systems & SOPs, Leadership Architecture, Ongoing Advisory.",
       areaServed: [
         { "@type": "Country", name: "Nigeria" },
         { "@type": "Place", name: "Global (Virtual Advisory)" },
       ],
       serviceType: [
-        "Strategic Clarity & Brand Positioning",
-        "SOP & Systems Consulting",
-        "Team Management & Leadership Architecture",
-        "Life & Ministry Advisory",
+        "Strategic Direction",
+        "Systems & SOPs",
+        "Leadership Architecture",
+        "Ongoing Advisory",
       ],
-      slogan: "Establishing Clarity, Enabling Impact.",
+      slogan: "Turn Vision Into Structured Execution.",
       priceRange: "$$$",
     },
     {
       "@type": "WebSite",
       "@id": `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: "Charles Adakole Consulting",
+      name: "Charles Adakole",
       publisher: { "@id": `${SITE_URL}/#organization` },
       inLanguage: "en-US",
       potentialAction: {

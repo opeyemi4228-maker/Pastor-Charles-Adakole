@@ -40,71 +40,55 @@ function useReveal(options = { threshold: 0.12, rootMargin: "0px 0px -60px 0px" 
   return [ref, visible];
 }
 
-// ─── Four process phases (from brief) ───────────────────────────────
+// ─── ACE Execution Framework ─────────────────────────────────────────
 const PHASES = [
   {
-    phase: "Phase One",
-    name: "The Clarity Audit",
-    title: "We begin by naming what's really in the way.",
+    phase: "A — Align",
+    name: "Align",
+    title: "Clarify direction, priorities, and what matters.",
     summary:
-      "A deep dive into your current workflows, vision, and bottlenecks. We surface the hidden constraints holding your organization back — not the symptoms, the underlying system that produces them.",
-    metric: "01",
-    metricLabel: "Discovery",
-    duration: "2–3 weeks",
+      "Before anything is built, we get clear on what the organization is trying to achieve and what is standing in the way. Priorities are defined, direction is sharpened, and the team understands what matters most.",
+    metric: "A",
+    metricLabel: "Align",
+    duration: "Weeks 1–2",
     quote:
-      "Before we prescribe, we diagnose. Most organizations mistake their symptoms for their disease — the Audit separates the two.",
+      "You cannot execute your way out of a clarity problem. Alignment comes first.",
     image:
       "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1600&q=80",
-    imageAlt: "A workspace with notebooks, pen, and a focused planning session",
-    href: "/process/clarity-audit",
+    imageAlt: "A focused planning session with clear direction",
+    href: "/services#strategic-direction",
   },
   {
-    phase: "Phase Two",
-    name: "The Blueprint",
-    title: "A custom roadmap designed around your specific challenge.",
+    phase: "C — Construct",
+    name: "Construct",
+    title: "Build systems: SOPs, workflows, team structure, accountability.",
     summary:
-      "Tailored SOPs, leadership structures, and decision frameworks engineered for your context. Not templates — the exact architecture your organization needs to reach its next level.",
-    metric: "02",
-    metricLabel: "Design",
-    duration: "3–4 weeks",
+      "With direction clear, we build the operational architecture — Standard Operating Procedures, team structures, decision flows, and accountability frameworks. Operations move from informal to documented and repeatable.",
+    metric: "C",
+    metricLabel: "Construct",
+    duration: "Weeks 3–8",
     quote:
-      "A Blueprint is not a document — it is the moment your organization stops improvising and starts building.",
+      "A system is not a document. It is the lived architecture of how your organization runs when you are not in the room.",
     image:
       "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
-    imageAlt: "An architectural blueprint and technical drawings on a desk",
-    href: "/process/blueprint",
+    imageAlt: "Building operational systems and documented workflows",
+    href: "/services#systems-sops",
   },
   {
-    phase: "Phase Three",
-    name: "Implementation",
-    title: "I walk with you as the systems take root.",
+    phase: "E — Execute",
+    name: "Execute",
+    title: "Embed rhythm: decision flow, performance tracking, leadership cadence.",
     summary:
-      "Direct, side-by-side rollout of the systems into daily operations. Team alignment sessions, accountability check-ins, and the coaching needed to ensure the Blueprint becomes lived reality — not shelved theory.",
-    metric: "03",
-    metricLabel: "Execution",
-    duration: "2–6 months",
+      "Systems only work when embedded in daily rhythm. We roll out the architecture into real operations — weekly cadences, performance tracking, and leadership routines that make execution consistent and measurable.",
+    metric: "E",
+    metricLabel: "Execute",
+    duration: "Ongoing",
     quote:
-      "Strategy only counts when it survives contact with Monday morning. Implementation is where I am most present.",
+      "Structure without rhythm is still chaos. Execution is where the framework becomes reality.",
     image:
       "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80",
-    imageAlt: "A leader in collaborative session with team members",
-    href: "/process/implementation",
-  },
-  {
-    phase: "Phase Four",
-    name: "Continuous Optimization",
-    title: "Systems that grow as your organization grows.",
-    summary:
-      "Periodic reviews that ensure your systems scale and evolve with you. Quarterly retros, refinement cycles, and the ongoing partnership that keeps your architecture matched to your ambition.",
-    metric: "04",
-    metricLabel: "Refinement",
-    duration: "Ongoing retainer",
-    quote:
-      "What I build must outlive my engagement. Optimization is how we make sure it does.",
-    image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=1600&q=80",
-    imageAlt: "A modern office skyline at twilight",
-    href: "/process/optimization",
+    imageAlt: "A team operating with clear cadence and accountability",
+    href: "/services#leadership-architecture",
   },
 ];
 
@@ -154,7 +138,7 @@ const FeaturedProduct = () => {
             ].join(" ")}
           >
             <span className="inline-block w-8 h-px" style={{ backgroundColor: "#C9A227" }} />
-            The Process
+            The ACE Execution Framework™
           </p>
 
           <h2
@@ -164,11 +148,11 @@ const FeaturedProduct = () => {
               headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6",
             ].join(" ")}
           >
-            How we{" "}
+            Align.{" "}
             <span className="italic font-normal" style={{ color: "#C9A227" }}>
-              work
-            </span>{" "}
-            together.
+              Construct
+            </span>
+            . Execute.
           </h2>
 
           <p
@@ -177,9 +161,9 @@ const FeaturedProduct = () => {
               headerVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4",
             ].join(" ")}
           >
-            Every engagement follows a four-phase rhythm — diagnostic before
-            prescriptive, partnership over transaction. This is how we move
-            from overwhelm to operational peace, together.
+            The ACE Execution Framework is the three-step method I use to
+            transform how organizations operate — from reactive and
+            founder-dependent to structured, scalable, and consistent.
           </p>
         </div>
 
@@ -321,7 +305,7 @@ const FeaturedProduct = () => {
                   {current.quote}
                 </blockquote>
                 <figcaption className="mt-4 text-[11px] font-semibold tracking-[0.2em] uppercase text-white/50">
-                  Charles Adakole — Principle of the Phase
+                  Charles Adakole — ACE Execution Framework™
                 </figcaption>
               </figure>
 
@@ -331,7 +315,7 @@ const FeaturedProduct = () => {
                   href={current.href}
                   className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[11.5px] font-semibold tracking-[0.16em] uppercase shadow-[0_8px_24px_-8px_rgba(201,162,39,0.5)] hover:shadow-[0_12px_32px_-8px_rgba(201,162,39,0.7)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0B] focus-visible:ring-[#C9A227] transition-all duration-300"
                 >
-                  Learn about this phase
+                  See this service
                   <FiArrowUpRight
                     className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                     aria-hidden="true"
@@ -343,7 +327,7 @@ const FeaturedProduct = () => {
                   className="group inline-flex items-center gap-2 text-[11.5px] font-semibold tracking-[0.16em] uppercase text-white/70 hover:text-[#C9A227] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/40 rounded-sm transition-colors duration-200"
                 >
                   <span className="relative">
-                    Begin with a Clarity Audit
+                    Book a Strategy Session
                     <span
                       className="absolute left-0 right-0 -bottom-0.5 h-px origin-left transition-transform duration-300 scale-x-0 group-hover:scale-x-100"
                       style={{ backgroundColor: "#C9A227" }}
@@ -354,6 +338,20 @@ const FeaturedProduct = () => {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Result callout */}
+        <div className="mt-16 md:mt-20 border-t border-white/10 pt-10 md:pt-12">
+          <p className="text-[11px] font-semibold tracking-[0.28em] uppercase text-[#C9A227] mb-4">
+            The Result
+          </p>
+          <p className="font-light leading-[1.2] tracking-tight text-white text-[22px] md:text-[28px] lg:text-[32px] max-w-3xl">
+            A structured organization that no longer depends on constant founder
+            intervention —{" "}
+            <span className="italic font-normal" style={{ color: "#C9A227" }}>
+              built to scale.
+            </span>
+          </p>
         </div>
       </div>
 

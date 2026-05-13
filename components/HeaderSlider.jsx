@@ -31,19 +31,17 @@ import { FiArrowRight } from "react-icons/fi";
  * Dependencies: react-icons (npm install react-icons)
  */
 
-// Rotating scope statements — reinforce the three domains of the practice
+// Rotating scope statements — reinforce the advisory positioning
 const SCOPE_STATEMENTS = [
-  "Strategic Advisor & Executive Coach for Business, Life, and Ministry",
-  "From the boardroom to the calling — one standard of clarity, one method of execution",
-  "Helping leaders move from overwhelm to high-impact leadership",
-];
+  "Strategic Advisory | Systems | Execution",
+  ];
 
 // Hero image — served via next/image. Replace with your own asset in /public.
 const HERO_IMAGE =
   "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=2400&q=85";
 
 const HERO_IMAGE_ALT =
-  "A city skyline at golden hour — the context in which Charles Adakole Consulting serves leaders across business, life, and ministry";
+  "A city skyline at golden hour — the context in which Charles Adakole serves leaders across business and ministry";
 
 const HeaderSlider = () => {
   const [statementIndex, setStatementIndex] = useState(0);
@@ -133,35 +131,36 @@ const HeaderSlider = () => {
 
             {/* Eyebrow */}
             <p className="text-[11px] font-semibold tracking-[0.32em] uppercase text-[#C9A227] mb-4 opacity-0 animate-[heroReveal_800ms_cubic-bezier(0.22,1,0.36,1)_350ms_forwards]">
-              Charles Adakole Consulting
+              Charles Adakole
             </p>
 
-            {/* H1 — "Clarity of Vision. Precision of Execution."
-                Italic gold accents on the two power words (Vision / Execution) */}
+            {/* H1 — "Turn Vision Into Structured Execution." */}
             <h1
               id="hero-heading"
               className="text-white font-medium leading-[1.02] tracking-[-0.015em] text-[46px] sm:text-[58px] md:text-[72px] lg:text-[88px] xl:text-[96px] opacity-0 animate-[heroReveal_900ms_cubic-bezier(0.22,1,0.36,1)_500ms_forwards]"
             >
-              Clarity of{" "}
+              Turn Vision Into{" "}
               <span className="italic font-semibold" style={{ color: "#C9A227" }}>
-                Vision
-              </span>
-              .
-              <br className="hidden sm:block" />
-              Precision of{" "}
-              <span className=" font-semibold" style={{ color: "#C9A227" }}>
-                Execution
+                Structured Execution
               </span>
               .
             </h1>
 
+            {/* Sub-headline */}
+            <p className="mt-6 md:mt-8 max-w-2xl text-[15px] md:text-[17px] leading-[1.7] text-white/80 font-light opacity-0 animate-[heroReveal_900ms_cubic-bezier(0.22,1,0.36,1)_700ms_forwards]">
+              I help leaders build systems and structure to execute consistently
+              and scale without chaos. From strategy and SOPs to team structure
+              and accountability, I bring order to complex operations so your
+              organization runs with clarity and control.
+            </p>
+
             {/* CTAs */}
-            <div className="mt-12 md:mt-14 flex flex-wrap items-center gap-3 opacity-0 animate-[heroReveal_900ms_cubic-bezier(0.22,1,0.36,1)_900ms_forwards]">
+            <div className="mt-10 md:mt-12 flex flex-wrap items-center gap-3 opacity-0 animate-[heroReveal_900ms_cubic-bezier(0.22,1,0.36,1)_900ms_forwards]">
               <Link
                 href="/contact"
                 className="group inline-flex items-center gap-2 px-7 md:px-8 py-3.5 md:py-4 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[11.5px] md:text-[12px] font-semibold tracking-[0.16em] uppercase shadow-[0_8px_24px_-8px_rgba(201,162,39,0.6)] hover:shadow-[0_12px_32px_-8px_rgba(201,162,39,0.75)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-neutral-950 focus-visible:ring-[#C9A227] transition-all duration-300"
               >
-                Schedule a Consultation
+                Book a Strategy Session
                 <FiArrowRight
                   className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
                   aria-hidden="true"

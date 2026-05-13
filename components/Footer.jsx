@@ -37,20 +37,20 @@ const PRIMARY_LINKS = [
 
 const SERVICE_PILLARS = [
   {
-    label: "Strategic Clarity & Brand Positioning",
-    href: "/services/strategic-clarity",
+    label: "Strategic Direction",
+    href: "/services#strategic-direction",
   },
   {
-    label: "SOP & Systems Consulting",
-    href: "/services/sop-systems",
+    label: "Systems & SOPs",
+    href: "/services#systems-sops",
   },
   {
-    label: "Team Management & Leadership",
-    href: "/services/leadership-architecture",
+    label: "Leadership Architecture",
+    href: "/services#leadership-architecture",
   },
   {
-    label: "Life & Ministry Advisory",
-    href: "/services/life-ministry",
+    label: "Ongoing Advisory",
+    href: "/services#ongoing-advisory",
   },
 ];
 
@@ -81,7 +81,7 @@ const Footer = () => {
       aria-labelledby="footer-heading"
     >
       <h2 id="footer-heading" className="sr-only">
-        Charles Adakole Consulting — site footer
+        Charles Adakole — site footer
       </h2>
 
       {/* Ambient warm glow */}
@@ -124,11 +124,10 @@ const Footer = () => {
               <Link
                 href="/"
                 className="inline-flex items-center gap-3 group focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/40 rounded-sm mb-10 md:mb-14"
-                aria-label="Charles Adakole Consulting — home"
+                aria-label="Charles Adakole — home"
               >
                 <span className="text-[15px] md:text-[16px] font-bold tracking-[0.04em] text-white">
-                  CHARLES ADAKOLE{" "}
-                  <span className="font-light">CONSULTING</span>
+                  CHARLES ADAKOLE
                 </span>
                 <svg
                   width="22"
@@ -154,24 +153,23 @@ const Footer = () => {
                   className="inline-block w-8 h-px"
                   style={{ backgroundColor: "#C9A227" }}
                 />
-                Establishing Clarity, Enabling Impact
+                Strategic Advisory | Systems | Execution
               </p>
 
               <p className="font-light leading-[1.15] tracking-tight text-white text-[28px] md:text-[36px] lg:text-[44px] max-w-2xl">
-                Strategic Advisor &amp; Executive Coach for{" "}
+                Turn Vision Into{" "}
                 <span
                   className="italic font-normal"
                   style={{ color: "#C9A227" }}
                 >
-                  Business, Life, and Ministry
+                  Structured Execution
                 </span>
                 .
               </p>
 
               <p className="mt-6 md:mt-8 text-[14.5px] md:text-[15px] leading-[1.75] text-white/65 max-w-lg">
-                Helping leaders move from overwhelm to high-impact leadership —
-                through strategic clarity, structural precision, and the
-                coordination of resources and people toward high-level goals.
+                Helping founders, executives, and ministry leaders build systems
+                and structure to execute consistently and scale without chaos.
               </p>
             </div>
 
@@ -182,20 +180,20 @@ const Footer = () => {
                   className="inline-block w-8 h-px"
                   style={{ backgroundColor: "#C9A227" }}
                 />
-                Ready to find your focus?
+                Ready to build structure?
               </p>
 
               <p className="text-[15px] md:text-[16px] leading-[1.75] text-white/70 mb-8 max-w-md">
-                Take the first step toward a more organized, impactful future —
-                whether you&apos;re scaling a business, leading a ministry, or
-                refining your life&apos;s vision.
+                If your organization is growing but execution is still
+                inconsistent, it&apos;s time to build the structure that makes
+                scale possible.
               </p>
 
               <Link
                 href="/contact"
                 className="group inline-flex items-center gap-2 px-7 py-3.5 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[11.5px] font-semibold tracking-[0.16em] uppercase shadow-[0_8px_24px_-8px_rgba(201,162,39,0.5)] hover:shadow-[0_12px_32px_-8px_rgba(201,162,39,0.75)] focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0A0B] focus-visible:ring-[#C9A227] transition-all duration-300"
               >
-                Schedule a Consultation
+                Book a Strategy Session
                 <FiArrowUpRight
                   className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
                   aria-hidden="true"
@@ -290,8 +288,8 @@ const Footer = () => {
                 ))}
               </ul>
               <p className="mt-6 text-[12px] leading-[1.6] text-white/50 max-w-[220px]">
-                Follow for weekly reflections on strategy, leadership, and
-                stewardship.
+                Follow for insights on strategy, execution, and operational
+                leadership.
               </p>
             </div>
           </div>
@@ -308,12 +306,12 @@ const Footer = () => {
           </ul>
 
           <p className="text-[11.5px] text-white/45 md:text-right">
-            © {currentYear} Charles Adakole Consulting.{" "}
+            © {currentYear} Charles Adakole.{" "}
             <span className="hidden md:inline" aria-hidden="true">
               ·{" "}
             </span>
             <span className="block md:inline mt-1 md:mt-0">
-              Establishing Clarity, Enabling Impact.
+              Strategic Advisory | Systems | Execution.
             </span>
           </p>
         </div>

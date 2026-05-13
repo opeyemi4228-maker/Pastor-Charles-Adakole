@@ -21,21 +21,21 @@ import { ChevronDown, Menu, X, ArrowRight } from "lucide-react";
 
 const BRAND = { gold: "#C9A227", goldHover: "#B8901C" };
 
-// Service pillars link to anchor sections on /services
+// Services link to anchor sections on /services
 const NAV_ITEMS = [
   { label: "Home", href: "/" },
   {
     label: "Services",
     href: "/services",
     children: [
-      { label: "Strategic Clarity & Brand Positioning", href: "/services#strategic-clarity" },
-      { label: "SOP & Systems Consulting", href: "/services#sop-systems" },
-      { label: "Team Management & Leadership", href: "/services#leadership-architecture" },
-      { label: "Life & Ministry Advisory", href: "/services#life-ministry" },
+      { label: "Strategic Direction", href: "/services#strategic-direction" },
+      { label: "Systems & SOPs", href: "/services#systems-sops" },
+      { label: "Leadership Architecture", href: "/services#leadership-architecture" },
+      { label: "Ongoing Advisory", href: "/services#ongoing-advisory" },
       { label: "The Process", href: "/services#process" },
     ],
   },
-  { label: "About Us", href: "/about" },
+  { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -82,44 +82,43 @@ const Navbar = () => {
             : "bg-transparent",
         ].join(" ")}
       >
-        <div className="px-6 md:px-10 lg:px-16 xl:px-20">
+        <div className="px-6 md:px-10 lg:px-16 xl:px-24">
           <div
             className={[
               "flex items-center justify-between transition-all duration-300",
-              scrolled ? "h-[68px]" : "h-[84px]",
+              scrolled ? "h-[84px]" : "h-[108px]",
             ].join(" ")}
           >
             {/* Wordmark */}
             <Link
               href="/"
-              className="flex items-center gap-2.5 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/50 rounded-sm group"
-              aria-label="Charles Adakole Consulting — home"
+              className="flex items-center gap-3 shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/50 rounded-sm group"
+              aria-label="Charles Adakole — home"
               onClick={() => setMobileOpen(false)}
             >
               <span
                 className={[
-                  "font-bold tracking-[0.02em] whitespace-nowrap transition-colors duration-300",
+                  "font-bold tracking-[0.06em] whitespace-nowrap transition-colors duration-300",
                   scrolled ? "text-neutral-900" : "text-white",
-                  "text-[14px] md:text-[15px] lg:text-[16px]",
+                  "text-[16px] md:text-[18px] lg:text-[20px]",
                 ].join(" ")}
               >
                 CHARLES ADAKOLE
-                <span className="hidden sm:inline font-light"> CONSULTING</span>
               </span>
 
               <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
                 fill="none"
                 aria-hidden="true"
                 className="shrink-0 transition-transform duration-500 group-hover:rotate-45"
               >
-                <circle cx="11" cy="11" r="10" fill={BRAND.gold} />
+                <circle cx="14" cy="14" r="13" fill={BRAND.gold} />
                 <path
-                  d="M7 11 L10 14 L15 8"
+                  d="M9 14 L12.5 17.5 L19 10.5"
                   stroke="#111111"
-                  strokeWidth="2"
+                  strokeWidth="2.2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 />
@@ -127,7 +126,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop nav */}
-            <nav className="hidden lg:flex items-center gap-1" aria-label="Primary">
+            <nav className="hidden lg:flex items-center gap-2" aria-label="Primary">
               {NAV_ITEMS.map((item) => {
                 const hasChildren = !!item.children;
                 const isOpen = openDropdown === item.label;
@@ -142,7 +141,7 @@ const Navbar = () => {
                     <Link
                       href={item.href}
                       className={[
-                        "group relative inline-flex items-center gap-1.5 px-3.5 py-2 text-[13.5px] font-semibold tracking-[0.01em] rounded-sm transition-colors duration-200",
+                        "group relative inline-flex items-center gap-2 px-4 py-3 text-[15px] font-semibold tracking-[0.03em] rounded-sm transition-colors duration-200",
                         textColor,
                         "hover:text-[#C9A227] focus:text-[#C9A227] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/40",
                       ].join(" ")}
@@ -153,7 +152,7 @@ const Navbar = () => {
                       {hasChildren && (
                         <ChevronDown
                           className={[
-                            "w-3.5 h-3.5 transition-transform duration-200",
+                            "w-4 h-4 transition-transform duration-200",
                             isOpen ? "rotate-180" : "",
                           ].join(" ")}
                           strokeWidth={2.5}
@@ -162,20 +161,20 @@ const Navbar = () => {
                         />
                       )}
                       <span
-                        className="pointer-events-none absolute left-3.5 right-3.5 bottom-1 h-[2px] bg-[#C9A227] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
+                        className="pointer-events-none absolute left-4 right-4 bottom-1.5 h-[2px] bg-[#C9A227] origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300"
                         aria-hidden="true"
                       />
                     </Link>
 
                     {hasChildren && isOpen && (
-                      <div className="absolute left-0 top-full pt-3 min-w-[320px]" role="menu">
-                        <div className="bg-white border-t-2 border-[#C9A227] shadow-[0_12px_40px_-8px_rgba(0,0,0,0.18)] rounded-b-sm py-3 animate-in fade-in slide-in-from-top-1 duration-200">
+                      <div className="absolute left-0 top-full pt-3 min-w-[340px]" role="menu">
+                        <div className="bg-white border-t-2 border-[#C9A227] shadow-[0_16px_48px_-8px_rgba(0,0,0,0.20)] rounded-b-sm py-3 animate-in fade-in slide-in-from-top-1 duration-200">
                           {item.children.map((child) => (
                             <Link
                               key={child.label}
                               href={child.href}
                               role="menuitem"
-                              className="block px-5 py-2.5 text-[13.5px] text-neutral-800 hover:text-[#C9A227] hover:bg-neutral-50 focus:bg-neutral-50 focus:text-[#C9A227] focus:outline-none transition-colors"
+                              className="block px-6 py-3 text-[14.5px] text-neutral-800 hover:text-[#C9A227] hover:bg-neutral-50 focus:bg-neutral-50 focus:text-[#C9A227] focus:outline-none transition-colors"
                               onClick={() => setOpenDropdown(null)}
                             >
                               {child.label}
@@ -194,16 +193,16 @@ const Navbar = () => {
               <Link
                 href="/contact"
                 className={[
-                  "group inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[11.5px] font-semibold tracking-[0.14em] uppercase transition-all duration-300",
+                  "group inline-flex items-center gap-2 px-7 py-3 rounded-full text-[12.5px] font-semibold tracking-[0.16em] uppercase transition-all duration-300",
                   "focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C9A227]",
                   scrolled
                     ? "bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 shadow-sm hover:shadow-md focus-visible:ring-offset-white"
                     : "bg-white/10 hover:bg-[#C9A227] text-white hover:text-neutral-900 border border-white/40 hover:border-[#C9A227] backdrop-blur-sm focus-visible:ring-offset-transparent",
                 ].join(" ")}
               >
-                Schedule a Consultation
+                Book a Strategy Session
                 <ArrowRight
-                  className="w-3.5 h-3.5 transition-transform duration-200 group-hover:translate-x-0.5"
+                  className="w-4 h-4 transition-transform duration-200 group-hover:translate-x-0.5"
                   strokeWidth={2.5}
                   aria-hidden="true"
                 />
@@ -215,7 +214,7 @@ const Navbar = () => {
               type="button"
               onClick={() => setMobileOpen((v) => !v)}
               className={[
-                "lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-sm transition-colors",
+                "lg:hidden inline-flex items-center justify-center w-12 h-12 rounded-sm transition-colors",
                 textColor,
                 "hover:text-[#C9A227] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/40",
               ].join(" ")}
@@ -224,9 +223,9 @@ const Navbar = () => {
               aria-label={mobileOpen ? "Close menu" : "Open menu"}
             >
               {mobileOpen ? (
-                <X className="w-6 h-6" strokeWidth={2} aria-hidden="true" />
+                <X className="w-7 h-7" strokeWidth={2} aria-hidden="true" />
               ) : (
-                <Menu className="w-6 h-6" strokeWidth={2} aria-hidden="true" />
+                <Menu className="w-7 h-7" strokeWidth={2} aria-hidden="true" />
               )}
             </button>
           </div>
@@ -255,22 +254,22 @@ const Navbar = () => {
           aria-modal="true"
           aria-label="Mobile navigation"
         >
-          <div className="flex items-center justify-between px-6 h-[68px] border-b border-neutral-200">
-            <span className="text-[14px] font-bold tracking-[0.02em] text-neutral-900">
-              CHARLES ADAKOLE <span className="font-light">CONSULTING</span>
+          <div className="flex items-center justify-between px-6 h-[84px] border-b border-neutral-200">
+            <span className="text-[17px] font-bold tracking-[0.06em] text-neutral-900">
+              CHARLES ADAKOLE
             </span>
             <button
               type="button"
               onClick={() => setMobileOpen(false)}
-              className="w-10 h-10 inline-flex items-center justify-center text-neutral-900 hover:text-[#C9A227] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/40 rounded-sm"
+              className="w-11 h-11 inline-flex items-center justify-center text-neutral-900 hover:text-[#C9A227] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/40 rounded-sm"
               aria-label="Close menu"
             >
-              <X className="w-6 h-6" strokeWidth={2} aria-hidden="true" />
+              <X className="w-7 h-7" strokeWidth={2} aria-hidden="true" />
             </button>
           </div>
 
-          <nav className="flex-1 overflow-y-auto px-6 py-6" aria-label="Mobile primary">
-            <ul className="space-y-1">
+          <nav className="flex-1 overflow-y-auto px-6 py-8" aria-label="Mobile primary">
+            <ul className="space-y-0">
               {NAV_ITEMS.map((item) => (
                 <MobileNavItem key={item.label} item={item} onNavigate={() => setMobileOpen(false)} />
               ))}
@@ -281,9 +280,9 @@ const Navbar = () => {
             <Link
               href="/contact"
               onClick={() => setMobileOpen(false)}
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[11.5px] font-semibold tracking-[0.14em] uppercase transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C9A227]"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-[#C9A227] hover:bg-[#B8901C] text-neutral-900 text-[13px] font-semibold tracking-[0.16em] uppercase transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#C9A227]"
             >
-              Schedule a Consultation
+              Book a Strategy Session
               <ArrowRight className="w-4 h-4" strokeWidth={2.5} aria-hidden="true" />
             </Link>
           </div>
@@ -303,7 +302,7 @@ const MobileNavItem = ({ item, onNavigate }) => {
         <Link
           href={item.href}
           onClick={onNavigate}
-          className="flex items-center justify-between py-3.5 text-[15px] font-semibold text-neutral-900 hover:text-[#C9A227] transition-colors border-b border-neutral-100"
+          className="flex items-center justify-between py-4 text-[17px] font-semibold text-neutral-900 hover:text-[#C9A227] transition-colors border-b border-neutral-100"
         >
           {item.label}
         </Link>
@@ -316,12 +315,12 @@ const MobileNavItem = ({ item, onNavigate }) => {
       <button
         type="button"
         onClick={() => setExpanded((v) => !v)}
-        className="w-full flex items-center justify-between py-3.5 text-[15px] font-semibold text-neutral-900 hover:text-[#C9A227] transition-colors border-b border-neutral-100 focus:outline-none"
+        className="w-full flex items-center justify-between py-4 text-[17px] font-semibold text-neutral-900 hover:text-[#C9A227] transition-colors border-b border-neutral-100 focus:outline-none"
         aria-expanded={expanded}
       >
         {item.label}
         <ChevronDown
-          className={["w-4 h-4 transition-transform duration-200", expanded ? "rotate-180" : ""].join(" ")}
+          className={["w-5 h-5 transition-transform duration-200", expanded ? "rotate-180" : ""].join(" ")}
           strokeWidth={2.5}
           style={{ color: BRAND.gold }}
           aria-hidden="true"
@@ -339,7 +338,7 @@ const MobileNavItem = ({ item, onNavigate }) => {
               <Link
                 href={child.href}
                 onClick={onNavigate}
-                className="block py-2.5 pl-3 text-[13.5px] text-neutral-700 hover:text-[#C9A227] transition-colors"
+                className="block py-3 pl-3 text-[15px] text-neutral-700 hover:text-[#C9A227] transition-colors"
               >
                 {child.label}
               </Link>

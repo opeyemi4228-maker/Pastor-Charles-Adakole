@@ -87,7 +87,7 @@ const STRUCTURED_DATA = {
     {
       "@type": "Organization",
       "@id": "https://charlesadakole.com/#organization",
-      name: "Charles Adakole & Co",
+      name: "Charles Adakole",
       url: "https://charlesadakole.com",
       logo: {
         "@type": "ImageObject",
@@ -105,20 +105,19 @@ const STRUCTURED_DATA = {
     {
       "@type": "ProfessionalService",
       "@id": "https://charlesadakole.com/#service",
-      name: "Charles Adakole & Co — Strategic Advisory",
+      name: "Charles Adakole — Strategic Advisory",
       parentOrganization: { "@id": "https://charlesadakole.com/#organization" },
       description:
-        "Strategic advisory firm providing strategy, operations, leadership, and transformation services to founders, boards, and institutions.",
+        "Strategic advisor helping founders, executives, and ministry leaders build systems and structure to execute consistently and scale without chaos.",
       areaServed: [
-        { "@type": "Place", name: "Africa" },
+        { "@type": "Country", name: "Nigeria" },
         { "@type": "Place", name: "Global" },
       ],
       serviceType: [
-        "Strategy & Growth Advisory",
-        "Operations & Transformation",
-        "Leadership & People Advisory",
-        "Mergers & Acquisitions",
-        "Sustainability & ESG",
+        "Strategic Direction",
+        "Systems & SOPs",
+        "Leadership Architecture",
+        "Ongoing Advisory",
       ],
       priceRange: "$$$$",
     },
@@ -126,7 +125,7 @@ const STRUCTURED_DATA = {
       "@type": "WebSite",
       "@id": "https://charlesadakole.com/#website",
       url: "https://charlesadakole.com",
-      name: "Charles Adakole & Co",
+      name: "Charles Adakole",
       publisher: { "@id": "https://charlesadakole.com/#organization" },
       inLanguage: "en-US",
     },
@@ -423,9 +422,9 @@ const CookieBanner = () => {
                   Your Privacy Matters
                 </h2>
                 <p id="cookie-banner-desc" className="text-[13.5px] leading-relaxed text-neutral-300">
-                  Charles Adakole &amp; Co uses cookies and related technologies to improve how
-                  our site functions, analyze traffic, and personalize content. You can control
-                  how we use cookies at any time by visiting our{" "}
+                  This site uses cookies and related technologies to improve how
+                  it functions, analyze traffic, and personalize content. You can control
+                  how cookies are used at any time by visiting our{" "}
                   <Link
                     href="/privacy-policy"
                     className="text-[#C9A227] underline underline-offset-2 hover:text-[#DEBB3F] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#C9A227]/50 rounded-sm transition-colors"
